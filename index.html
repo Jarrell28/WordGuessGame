@@ -7,10 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Word Guess Game</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .letter {
+            /* text-decoration: underline; */
+        }
+    </style>
 </head>
 
 <body>
     <h1>Press any key to get started!</h1>
+    <p>Wins: <span id="wins">0</span></p>
+    <p id="word"></p>
+    <p>Number of Guesses Remaining</p>
+    <p id="guesses"></p>
+    <p>Letters Already Guessed</p>
+    <p id="guessed"></p>
+
     <script src="assets/javascript/game.js"></script>
 </body>
 
