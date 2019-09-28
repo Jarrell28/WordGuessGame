@@ -6,22 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Word Guess Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        .letter {
-            /* text-decoration: underline; */
-        }
+
     </style>
 </head>
 
 <body>
-    <h1>Press any key to get started!</h1>
-    <p>Wins: <span id="wins">0</span></p>
-    <p id="word"></p>
-    <p>Number of Guesses Remaining</p>
-    <p id="guesses"></p>
-    <p>Letters Already Guessed</p>
-    <p id="guessed"></p>
+
+
+    <h1 class="text-center pt-5">Word Guess Game(Sports Edition)</h1>
+    <h2 id="start-text" class="text-center pt-3">Press any key to get started!</h2>
+    <div class="container">
+        <div class="row pt-4">
+            <div class="col-sm-6">
+                <p class="h4">Wins: <span id="wins" class="h2">0</span></p>
+
+                <p class="h4 pt-4">Guesses Remaining</p>
+                <p id="guesses" class="h2"></p>
+            </div>
+            <div class="col-sm-6">
+                <p id="word" class="h2"></p>
+                <p class="h4 pt-4">Letters Already Guessed</p>
+                <p id="guessed" class="h2"></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <p id="game-results" class="text-center h2"></p>
+
+        <button class="btn btn-outline-primary mt-4 mx-auto d-block hide" id="play-btn">Play Again?</button>
+        <img id="display-image" src="" alt="" style="max-width: 300px; height: auto" class="d-block mx-auto mt-4">
+    </div>
+
 
     <script src="assets/javascript/game.js"></script>
 </body>

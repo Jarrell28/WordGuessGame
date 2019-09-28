@@ -1,0 +1,15 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),url("../images/sports-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.col-sm-6 *{
+    text-align: center;
+}
+
+.hide {
+    visibility: hidden;
+}
